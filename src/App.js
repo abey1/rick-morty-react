@@ -3,8 +3,17 @@ import "bootstrap/dist/js/bootstrap";
 
 function App() {
   return (
-  <h1 className="text-center ubuntu  my-4">
-    Rick & Morthy <span className="text-primary">WiKi</span> 
-    </h1>);
+    <div className="App">
+      <h1 className="text-center ubuntu  my-4">
+        Rick & Morthy <span className="text-primary">WiKi</span>
+      </h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-3"></div>
+          <div className="col-8"></div>
+        </div>
+      </div>
+    </div>
+  );
 }
 export default App;
