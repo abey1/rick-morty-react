@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Search.module.scss";
 const Search = ({ setPageNumber, setSearch }) => {
   return (
-    <form className="d-flex justify-content-center mb-5 gap-5">
+    <form className="d-flex justify-content-center mb-5 gap-5 mt-5">
       <input
         placeholder="Search for Characters"
         type="text"

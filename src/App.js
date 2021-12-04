@@ -6,6 +6,7 @@ import Filters from "./components/Filters/Filters";
 import Pagination from "./components/Pagination/Pagination";
 import Search from "./components/Search/Search";
 import PageNumber from "./components/PageNumber/PageNumber";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   let [pageNumber, setPageNumber] = useState(1);
@@ -27,13 +28,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-center ubuntu  my-4">
-        Rick & Morthy <span className="text-primary">WiKi</span>
-      </h1>
+      <Navbar />
+
       <div className="container d-flex justify-content-center">
-        <p className="display-5">
+        {/* <p className="display-5">
           <PageNumber pageNumber={pageNumber} />
-        </p>
+        </p> */}
       </div>
       <Search setPageNumber={setPageNumber} setSearch={setSearch} />
       <div className="container">
